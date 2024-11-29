@@ -1,0 +1,63 @@
+#wrap {background-color:purple;}
+#wrap main {background-color:#fff;}
+#wrap main .path_bg {background-color:#f9f9f9; padding:15px 80px; text-align:right;}
+#wrap main .path_bg .path {}
+#wrap main .path_bg .path * {font-size:0.88rem;}
+#wrap main .path_bg .path a {color:#555;}
+#wrap main .path_bg .path img {margin:0 12px;}
+#wrap main .path_bg .path em {font-weight:500;}
+#wrap main h1 {text-align:center; font-size:3.3rem; font-weight:700; margin:50px 0 30px;}
+#wrap main > p {margin-bottom:30px; font-weight:500; text-align:center;}
+#wrap main .bg {background-color:#f9f9f9; padding:50px 0;}
+#wrap main .bg > div {
+    width:1140px;
+    margin:0 auto 80px;
+}
+#wrap main .bg > div .img,
+#wrap main .bg > div .contents {display:inline-block;}
+#wrap main .bg > div .img {width:657px;}
+#wrap main .bg > div .img img {width:100%;}
+#wrap main .bg > div .contents {width:479px; padding-left:20px;}
+#wrap main .bg > div .contents .number {font-size:5rem; font-weight:700; letter-spacing:-0.04rem; color:rgba(0,0,0,0.1);}
+#wrap main .bg > div .contents h2 {font-size:2rem; font-weight:600; letter-spacing:-0.02rem;}
+#wrap main .bg > div .contents p:nth-child(3) {margin-top:30px; color:#555; letter-spacing:-0.02rem; line-height:1.7;}
+/*==============================================01. 종합식품사업*/
+#wrap main .bg .food {}
+#wrap main .bg .food .img {}
+#wrap main .bg .food .img img {}
+#wrap main .bg .food .contents {padding-right:60px;}
+#wrap main .bg .food .contents .number {}
+#wrap main .bg .food .contents .number h2 {}
+#wrap main .bg .food .contents .number p:nth-child(3) {}
+/*==============================================02. 점포사업*/
+#wrap main .bg .business {}
+#wrap main .bg .business .img {}
+#wrap main .bg .business .img img {}
+#wrap main .bg .business .contents {padding-left:60px;}
+#wrap main .bg .business .contents .number {}
+#wrap main .bg .business .contents h2 {}
+#wrap main .bg .business .contents p:nth-child(3) {}
+/*==============================================03. 컨세션사업 */
+#wrap main .bg .concession {}
+#wrap main .bg .concession .img {}
+#wrap main .bg .concession .img img {}
+#wrap main .bg .concession .contents {padding-right:60px;}
+#wrap main .bg .concession .contents .number {}
+#wrap main .bg .concession .contents h2 {}
+#wrap main .bg .concession .contents p:nth-child(3) {}
+/*==============================================04. 서비스사업*/
+#wrap main .bg .service {}
+#wrap main .bg .service .img {}
+#wrap main .bg .service .img img {}
+#wrap main .bg .service .contents {padding-left:60px;}
+#wrap main .bg .service .contents .number {}
+#wrap main .bg .service .contents h2 {}
+#wrap main .bg .service .contents p:nth-child(3) {}
+/*==============================================05. 수출산업*/
+#wrap main .bg .export {}
+#wrap main .bg .export .img {}
+#wrap main .bg .export .img img {}
+#wrap main .bg .export .contents {padding-right:60px;}
+#wrap main .bg .export .contents .number {}
+#wrap main .bg .export .contents h2 {}
+#wrap main .bg .export .contents p:nth-child(3) {}
