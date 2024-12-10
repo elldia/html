@@ -1,20 +1,18 @@
-#wrap {
-    background-color:brown;
-}
+#wrap {}
 #wrap header {
     background-color:rgba(0,0,0,0.1);
     padding:21px 80px;
     /*header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다.*/
     height:80px;
+    position:fixed; left:0; top:0; z-index:999;
+    width:100%;
 }
 #wrap header h1 {
-    background-color:aqua;
     float:left; padding-top:3px;
 }
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color:coral;
     float:right;
 }
 #wrap header nav ul {
@@ -37,36 +35,204 @@
 /*========================메인 1~4행 공통선택자*/
 #wrap main .container {background-color:beige;}
 #wrap main .container .contents {
-    background-color:hotpink;
+    width:1440px; height:100vh;
+    margin:0 auto;
+    background-color:rgba(255,255,255,0.3);/*제거용*/
 }
 #wrap main .container .contents .txt {
-    background-color:aqua;
+    background-color:orange;
 }
-#wrap main .container .contents .txt h1 {}
-#wrap main .container .contents .txt h1 span {}
-#wrap main .container .contents .txt p {}
+#wrap main .container .contents .txt .sub_title {
+    font-size:1.56rem; font-weight:600; letter-spacing: -0.02em; margin-bottom:20px; color:#fff;
+}
+#wrap main .container .contents .txt h1 {
+    font-size:4.38rem; font-weight:700; line-height:1.3;
+    color:#fff;
+}
+#wrap main .container .contents .txt h1 span {
+    font-weight:700; color:#5EE1FF;
+}
+#wrap main .container .contents .txt h1+p {
+    font-size:1.5rem; font-weight:500; line-height:1.5;
+    letter-spacing:-0.02em; color:#fff;
+    margin:20px 0;
+}
 /*========================메인 1행 결제편리함*/
 #wrap main .pay {
     background-image:url(../images/row1.jpg);
+    background-size:cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .txt {}
+#wrap main .pay .contents {position:relative;}
+#wrap main .pay .contents .txt {
+    padding-top:231px;
+}
 #wrap main .pay .contents .txt h1 {}
 #wrap main .pay .contents .txt h1 span {}
 #wrap main .pay .contents .txt p {}
-#wrap main .pay .contents .txt .bnr_btn_wrap {
-    background-color:purple;
-}
+#wrap main .pay .contents .txt .bnr_btn_wrap {}
+#wrap main .pay .contents .txt .bnr_btn_wrap > * {margin-right:10px;}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display:inline-block; 
+    width:100px; height:2px;
+    background-color:rgba(255,255,255,0.3);
+    position:relative; bottom:12px;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-child(4){
+    background-color:rgba(255,255,255,1);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
 #wrap main .pay .contents .scroll {
-    background-color:brown;
+    position:absolute;
+    right:0; bottom:43px;
 }
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform:uppercase; /*모두 대문자*/
+    font-size:0.88rem; line-height:1.3; font-weight:500; color:#fff;
+    position:relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display:inline-block;
+    width:12px; height:30px; border-radius:6px;
+    background-color:#555;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display:inline-block;
+    width:8px; height:8px; border-radius:50%;
+    background-color:#fff;
+    position:relative; left:2px; top:-5px;
+}
+/* ==================================================2행 신한은행PG란? */
+#wrap main .service {
+    background-image:url(../images/row2.jpg);
+    background-size:cover;
+}
+#wrap main .service .contents {overflow:hidden;}
+#wrap main .service .contents .txt {float:left; padding-top:311px;}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .txt h1+p {}
+#wrap main .service .contents .right_contents {float:right;}
+#wrap main .service .contents .right_contents .card {
+    width:331px;
+    border-radius:25px; overflow:hidden;
+    display:inline-block; position:relative;
+}
+#wrap main .service .contents .right_contents .card .group {
+    background-color:#fff; padding:30px 20px;
+}
+#wrap main .service .contents .right_contents .card .group h2 {
+    font-size:1.56rem; font-weight:600; letter-spacing: -0.02em; margin:0 0 35px 0;
+}
+#wrap main .service .contents .right_contents .card .group p {
+    line-height:1.5; letter-spacing: -0.02em; color:#555; margin:0 0 35px 0;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view {
+    overflow:hidden; display:block;
+    border-top:1px solid #000; padding:10px 0;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view span {
+    float:left; line-height:1.5; letter-spacing: -0.02em; font-weight:600;
+}
+#wrap main .service .contents .right_contents .card .group .detail_view img {float:right;}
+#wrap main .service .contents .right_contents .card1 {
+    background-image:url(../images/card_bg1.jpg);
+    background-size:100%;
+    background-position:center top;
+    padding-top:200px; top:157px; margin-right:20px;
+}
+#wrap main .service .contents .right_contents .card1 .group {}
+#wrap main .service .contents .right_contents .card1 .group h2 {}
+#wrap main .service .contents .right_contents .card1 .group p {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view span {}
+#wrap main .service .contents .right_contents .card1 .group .detail_view img {}
+#wrap main .service .contents .right_contents .card2 {
+    background-image:url(../images/card_bg2.jpg);
+    background-size:100%;
+    background-position:center top;
+    padding-top:200px;
+    top:311px;
+    opacity:0.6;
+}
+#wrap main .service .contents .right_contents .card2 .group {}
+#wrap main .service .contents .right_contents .card2 .group h2 {}
+#wrap main .service .contents .right_contents .card2 .group p {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view span {}
+#wrap main .service .contents .right_contents .card2 .group .detail_view img {}
+/* ==================================================3행 차별화된 서비스 */
+#wrap main .different {
+    background-image:url(../images/row3.jpg);
+    background-size:cover;
+}
+#wrap main .different .contents {}
+#wrap main .different .contents .txt {
+    text-align:center;
+    padding-top:162px;
+}
+#wrap main .different .contents .txt .sub_title {}
+#wrap main .different .contents .txt .sub_title h1 {}
+#wrap main .different .contents .txt .sub_title h1 span {}
+#wrap main .different .contents .txt .sub_title h1+p {}
+#wrap main .different .contents ol {
+    overflow:hidden; margin-top:109px;
+}
+#wrap main .different .contents ol li {
+    width:290px; height:290px; border-radius:50%;
+    border:20px solid rgba(255,255,255,0.5);
+    position:relative; /*after가상요소의 부모설정*/
+    float:left; margin-right:93.33px;
+    text-align:center;
+}
+#wrap main .different .contents ol li::after {
+    content:'';
+    display:block;
+    background-color:#fff;
+    width:250px; height:250px; border-radius:50%;
+    position:absolute; left:0; top:0; z-index:50;
+}
+#wrap main .different .contents ol li:nth-child(4) {margin:0;}
+#wrap main .different .contents ol li > * {
+    position:relative; z-index:60;
+}
+#wrap main .different .contents ol li .num {
+    background-color:#5E91FF; display:inline-block;
+    padding:5px 20px; border-radius:20px;
+    color:#fff; font-size:1.56rem; font-weight:600;
+    margin:67px 0 10px;
+}
+#wrap main .different .contents ol li h2 {
+    line-height:1.3; font-size:1.56rem; font-weight:600; letter-spacing: -0.02em;
+}
+/* ===========================================4행 자주묻는질문 */
+#wrap main .question {}
+#wrap main .question .contents {padding-top:231px;}
+#wrap main .question .contents .txt {margin-bottom:54px;}
+#wrap main .question .contents .txt .sub_title {color:#5E91FF;}
+#wrap main .question .contents .txt h1 {color:#000;}
+#wrap main .question .contents .q_contents {
+    background-color:aqua;
+}
+#wrap main .question .contents .q_contents a {
+    background-color:lime;
+    overflow:hidden;
+    display:block; 
+    padding:20px; margin-bottom:20px;
+}
+#wrap main .question .contents .q_contents a:nth-child(3) {margin:0;}
+#wrap main .question .contents .q_contents a .q_left {
+    background-color:yellow;
+    float:left;
+}
+#wrap main .question .contents .q_contents a .q_left .category {}
+#wrap main .question .contents .q_contents a .q_left img {}
+#wrap main .question .contents .q_contents a .q_left em {}
+#wrap main .question .contents .q_contents a .q_down {
+    background-color:coral;
+    float:right;
+}
+#wrap main .question .contents .q_contents a .q_down img {}
