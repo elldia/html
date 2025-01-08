@@ -29,15 +29,23 @@
     font-size:0.88rem; letter-spacing: -0.02em;
 }
 /* ==========================header 모바일출력메뉴(S) */
-.h_bg header .m_nav {}
-.h_bg header .m_nav .login_join_cs {}
-.h_bg header .m_nav .login_join_cs a {}
+.h_bg header .m_nav {
+    position:fixed; left:0; top:125px; 
+    background-color:#fff;
+    z-index:999; width:100%; height:calc(100vh - 125px);
+    text-align:center;
+}
+.h_bg header .m_nav .login_join_cs {padding:30px 0;}
+.h_bg header .m_nav .login_join_cs a {color:#000;}
 .h_bg header .m_nav nav {}
 .h_bg header .m_nav nav > ul {}
-.h_bg header .m_nav nav > ul > li {}
-.h_bg header .m_nav nav > ul > li > a {}
-.h_bg header .m_nav nav > ul > li > .sub {}
-.h_bg header .m_nav nav > ul > li > .sub li {}
+.h_bg header .m_nav nav > ul > li {
+    padding:10px 0;
+    border-bottom:0.5px dashed #aaa;
+}
+.h_bg header .m_nav nav > ul > li > a {color:#000;}
+.h_bg header .m_nav nav > ul > li > .sub {padding:20px 0; background-color:#000;}
+.h_bg header .m_nav nav > ul > li > .sub li {padding:10px 0; }
 .h_bg header .m_nav nav > ul > li > .sub li a {}
 /* ==========================header 모바일출력메뉴(E) */
 /* ==========================header 검색팝업(S) */
